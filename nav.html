@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+
+    <!--  -->
+    <div class="modal" id="suitesModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="modal__title">
+                    Наши сайты
+                </div>
+                <button class="close-btn _close-modal">
+                    <img src="img/close2.svg" alt="">
+                </button>
+            </div>
+            <div class="sites">
+                <div class="site-item">
+                    <div class="site-item__title">
+                        ICL
+                    </div>
+                    <div class="site-item__desc">
+                        ИТ-Сайт Группы компаний ICL для розницы и сферы обслуживания
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        Экосистема ICL.Retail
+                    </div>
+                    <div class="site-item__desc">
+                        ИТ-решения для розницы и сферы обслуживания
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        Migration ICL Services
+                    </div>
+                    <div class="site-item__desc">
+                        Экспертный центр по миграциям на российские ОС и ПО
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        ProГен.ИИ
+                    </div>
+                    <div class="site-item__desc">
+                        AI-помощник для автоматизации входящих обращений и работы с документами
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        Колибри-АРМ
+                    </div>
+                    <div class="site-item__desc">
+                        Решение для управления ИТ-инфраструктурой
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        AISee
+                    </div>
+                    <div class="site-item__desc">
+                        Платформа видеоаналитики для предотвращения потерь на кассах самообслуживания
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        ПАК «ЭВО»
+                    </div>
+                    <div class="site-item__desc">
+                        Комплект оборудования и программного обеспечения для организации рабочих мест пользователей
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-item">
+                    <div class="site-item__title">
+                        SNRD
+                    </div>
+                    <div class="site-item__desc">
+                        Российская модульная микросервисная платформа для комплексного управления активами предприятия, сервисным обслуживанием и мобильным персоналом
+                    </div>
+                    <div class="site-item__nav">
+                        <a href="" class="site-item__link">
+                            icl.ru 
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
